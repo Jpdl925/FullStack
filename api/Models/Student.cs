@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 
 namespace api.Models
-{
+
     public class Student
     {
         public int Id { get; set; }
@@ -16,4 +16,3 @@ namespace api.Models
     public string? PhoneNumber { get; set; }
     public string? Email { get; set; }
     }
-}
