@@ -23,9 +23,8 @@ namespace api.Controllers
 
         [HttpGet]
         // Get list of students
-        public async Task<IEnumerable<Student>> getStudent(){
-            var students = await _context.Students.AsNoTracking().ToListAsync();
-            return students;
+        public async Task<IActionResult> Students(){
+             return Ok(await _context.Students.AsNoTracking().ToListAsync());
         }
 
 
